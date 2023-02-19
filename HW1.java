@@ -38,5 +38,43 @@ public class HW1 {
                     }
                 }
         System.out.println();
+
+        boolean finished = false;
+        
+        while (!finished)
+        {
+            System.out.println("Options:");
+            System.out.println("1- Display the maximum and the minimum of the array");
+            System.out.println("2- Display how each element of the array differs from the average");
+            System.out.println("3- Display the sum of odd elements and the sum of even elements");
+            System.out.println("4- Quit");
+
+            System.out.print("Please choose an option: ");
+            int option = in.nextInt();
+
+            switch (option){
+                // Display the maximum and the minimum of the array TODO
+                case 1:{
+                    break;
+                }
+            
+                // Display how each element of the array differs from the average TODO
+                case 2:{
+                    break;
+                }
+
+                // Display the sum of odd elements and the sum of even elements TODO
+                case 3:{
+                    break;
+                }
+
+                // Quit
+                case 4:{
+                    finished = true;
+                    break;
+                }
+            }
+        }
+        System.out.println("Bye bye!");
     }
 }
