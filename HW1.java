@@ -16,7 +16,7 @@ public class HW1 {
         }
         return array;
     }
-     public int getMınımum(int[] array){
+     public static int getMinimum(int[] array){
         int minimum=array[0];
         for(int i=0;i<array.length;i++){
             if(minimum>array[i]){
@@ -24,7 +24,7 @@ public class HW1 {
             }
         }
         return minimum;}
-    public int getMaximum(int[] array){
+    public static int getMaximum(int[] array){
         int maximum=array[0];
         for(int i=0;i<array.length;i++){
             if(maximum<array[i]){
@@ -74,7 +74,7 @@ public class HW1 {
             switch (option){
                 
                 case 1:{
-                    System.out.println("Minimum value of the array : "+getMınımum(array));
+                    System.out.println("Minimum value of the array : "+getMinimum(array));
                     System.out.println("Maximum value of the array : "+getMaximum(array));
                     
                     break;
