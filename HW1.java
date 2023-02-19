@@ -16,6 +16,25 @@ public class HW1 {
         }
         return array;
     }
+     public int getMınımum(int[] array){
+        int minimum=array[0];
+        for(int i=0;i<array.length;i++){
+            if(minimum>array[i]){
+                minimum=array[i];
+            }
+        }
+        return minimum;}
+    public int getMaximum(int[] array){
+        int maximum=array[0];
+        for(int i=0;i<array.length;i++){
+            if(maximum<array[i]){
+                maximum=array[i];
+            }
+        }
+        return maximum;
+
+    }
+    
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -53,8 +72,11 @@ public class HW1 {
             int option = in.nextInt();
 
             switch (option){
-                // Display the maximum and the minimum of the array TODO
+                
                 case 1:{
+                    System.out.println("Minimum value of the array : "+getMınımum(array));
+                    System.out.println("Maximum value of the array : "+getMaximum(array));
+                    
                     break;
                 }
             
