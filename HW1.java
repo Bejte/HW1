@@ -57,20 +57,7 @@ public class HW1 {
         int size = in.nextInt();
 
         int[] array = HW1.createArray(size);
-        System.out.println("Array is :");
-        System.out.print("{");
-                for(int i = 0; i< array.length ; i++)
-                {
-                    if(i == array.length - 1)
-                    {
-                        System.out.print(array[i] + "}");
-                    }
-                    else
-                    {    
-                        System.out.print(array[i] + ", ");
-                    }
-                }
-        System.out.println();
+        System.out.println("Array is : " + Arrays.toString(array));
 
         boolean finished = false;
         
