@@ -1,6 +1,7 @@
 /**
  * HW1
  */
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -35,6 +36,19 @@ public class HW1 {
 
     }
     
+    public static int [] displayVariance(int [] array) {
+        int arraySum = 0;
+        for (int el : array) {
+            arraySum += el;
+        }
+        int average = arraySum / array.length;
+
+        int [] varienceArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            varienceArray[i] = array[i] - average;
+        } 
+        return varienceArray;
+    }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -80,9 +94,10 @@ public class HW1 {
                     break;
                 }
             
-                // Display how each element of the array differs from the average TODO
+                // Display how each element of the array differs from the average 
                 case 2:{
-                    break;
+                    String output = "The difference of elements in " + Arrays.toString(array) + " from average are " + Arrays.toString(displayVariance(array));
+                    System.out.println(output);
                 }
 
                 // Display the sum of odd elements and the sum of even elements TODO
