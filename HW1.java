@@ -49,12 +49,12 @@ public class HW1 {
         } 
         return varienceArray;
     }
-    public static void displaySums(int numbers[]){
+    public static void displaySums(int [] numbers){
         int sumofEven = 0;
         System.out.print("Sum of the even indexes is : ");
 
         for(int i=0;i<numbers.length;i=i+2){
-            sumofEven = sumofEven + ((i+1) + numbers[i]);
+            sumofEven = sumofEven + numbers[i];
         }
         System.out.println(sumofEven);
 
@@ -62,11 +62,11 @@ public class HW1 {
         System.out.print("Sum of the odd indexes is : ");
 
         for(int i=1;i<numbers.length;i=i+2){
-            sumofOdd = sumofOdd + ((i+1) + numbers[i]);
+            sumofOdd = sumofOdd + numbers[i];
 
         }
         System.out.println(sumofOdd);
-    
+    }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -107,6 +107,7 @@ public class HW1 {
 
                 // Display the sum of odd elements and the sum of even elements TODO
                 case 3:{
+                    displaySums(array);
                     break;
                 }
 
