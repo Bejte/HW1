@@ -49,6 +49,24 @@ public class HW1 {
         } 
         return varienceArray;
     }
+    public static void displaySums(int numbers[]){
+        int sumofEven = 0;
+        System.out.print("Sum of the even indexes is : ");
+
+        for(int i=0;i<numbers.length;i=i+2){
+            sumofEven = sumofEven + ((i+1) + numbers[i]);
+        }
+        System.out.println(sumofEven);
+
+        int sumofOdd = 0;
+        System.out.print("Sum of the odd indexes is : ");
+
+        for(int i=1;i<numbers.length;i=i+2){
+            sumofOdd = sumofOdd + ((i+1) + numbers[i]);
+
+        }
+        System.out.println(sumofOdd);
+    
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
